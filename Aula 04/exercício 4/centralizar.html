@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Card de Produto Centralizado</title>
+  <style>
+    html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.pai {
+  height: 100vh;
+  background-color: #f0f4f8;
+  
+}
+
+.card-produto {
+  width: 320px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-produto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-produto h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.card-produto p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-produto button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-produto button:hover {
+  background-color: #357abd;
+}
+  </style>
+</head>
+<body>
+  <div class="pai">
+    <div class="card-produto">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/br/f-a566ezkr390b/gallery/br-bundle-a56-5g__-galaxy-fit3__-graphite-f-a566ezkr390b-thumb-545945947?$UX_EXT2_PNG$" alt="Produto Exemplo" />
+      <h2>Smartphone</h2>
+      <p>Smartphone moderno com tela AMOLED, câmera de 48MP e bateria de longa duração.</p>
+      <button>Comprar Agora</button>
+    </div>
+  </div>
+</body>
+</html>

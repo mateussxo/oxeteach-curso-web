@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e3c72;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: #d0e4f7;
+  height: 300px;
+  margin: 30px 0;
+  position: relative;
+  top: 0;
+ 
+}
+
+.box {
+  background-color: #6db3f2;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.box1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.box2 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.box3 {
+    position: absolute;
+    bottom: 10px;
+    left: 360px;
+}
+
+.contato-fixo {
+  background-color: #1a5798;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

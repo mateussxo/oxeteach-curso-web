@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e6cbff;
+}
+
+header {
+  background: linear-gradient(180deg, #8a41cf, #6a329f, #55287f);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 30px;
+}
+
+header {
+  background: linear-gradient(180deg, #9b59b6, #7b1fa2);
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+ 
+}
+
+
+nav a {
+  display: inline-block;
+  background-color: #9b5de5;
+  color: white;
+  text-decoration: none;
+  padding: 15px 90px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #7a3fc3;
+  transform: scale(1.05);
+}
+
+main {
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+}
+
+h3 {
+  margin: 15px 0 5px 0;
+}
+
+.divisao {
+  width: 100%;
+  height: 1px;
+  background-color: #924fd2;
+  margin: 20px 0;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #55287f;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
