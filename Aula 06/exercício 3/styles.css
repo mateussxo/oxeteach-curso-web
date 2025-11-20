@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+
+.tabela {
+    width: 600px; 
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.tabela td {
+    border: 1px solid black;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 50px; 
+}
+
+
+.tabela-1 {
+    background-color: #e0ffff; 
+}
+
+.tabela-1 tr:last-child td {
+    padding: 25px 10px;
+}
+
+
+.tabela-2 {
+    background-color: #ffe4b5; 
+}
+
+
+.tabela-3 {
+    background-color: #ffc0cb; 
+}
