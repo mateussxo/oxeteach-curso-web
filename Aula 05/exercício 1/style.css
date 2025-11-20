@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.produto {
+  width: 200px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.produto h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.produto p {
+  color: #555;
+}
+
+.produto button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: #218838;
+}
