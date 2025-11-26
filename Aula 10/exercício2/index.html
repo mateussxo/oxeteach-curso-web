@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css"> 
+</head>
+<body>
+    <div class="card-formulario">
+    <h2>Preferências do Usuário</h2>
+
+    <form>
+        
+        <div class="campo">
+            
+            <h3>Gênero</h3>
+            <div class="grupo-opcoes">
+                <div class="opcao">
+                    <input type="radio" id="masculino" name="genero" value="M">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" id="feminino" name="genero" value="F">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" id="outro" name="genero" value="O">
+                    <label for="outro">Outro</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="campo">
+            <h3>Interesses</h3>
+            <div class="grupo-opcoes">
+                <div class="opcao">
+                    <input type="checkbox" id="tecnologia" name="interesse_tecnologia" value="sim">
+                    <label for="tecnologia">Tecnologia</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="esportes" name="interesse_esportes" value="sim">
+                    <label for="esportes">Esportes</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="musica" name="interesse_musica" value="sim">
+                    <label for="musica">Música</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="literatura" name="interesse_literatura" value="sim">
+                    <label for="literatura">Literatura</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+        
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card-registro {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+        }
+
+        .card-registro h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 1.6em;
+        }
+
+        .secao {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .secao h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* Estilos de Input de Texto */
+        .form-grupo-input {
+            margin-bottom: 15px;
+        }
+
+        .form-grupo-input label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .form-grupo-input input[type="text"],
+        .form-grupo-input input[type="email"],
+        .form-grupo-input input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos de Radio e Checkbox */
+        .opcoes-lista {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .opcoes-lista label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            color: #444;
+        }
+        
+        .opcoes-lista input[type="radio"],
+        .opcoes-lista input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        
+        /* Estilo do Botão Enviar */
+        .btn-enviar {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-enviar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-registro">
+        <h2>Formulário de Registro</h2>
+        <form>
+            <div class="secao">
+                <h3>Informações Pessoais</h3>
+                
+                <div class="form-grupo-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                
+                <div class="form-grupo-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-grupo-input">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+            </div>
+
+            <div class="secao">
+                <h3>Preferências</h3>
+
+                <div class="form-grupo-radio">
+                    <label style="margin-bottom: 5px;">Gênero:</label>
+                    <div class="opcoes-lista">
+                        <label>
+                            <input type="radio" name="genero" value="masculino" checked>
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="feminino">
+                            Feminino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="outro">
+                            Outro
+                        </label>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="form-grupo-checkbox">
+                    <label style="margin-bottom: 5px;">Interesses:</label>
+                    <div class="opcoes-lista">
+                        <label>
+                            <input type="checkbox" name="interesses" value="tecnologia">
+                            Tecnologia
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesses" value="musica">
+                            Música
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesses" value="esportes">
+                            Esportes
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

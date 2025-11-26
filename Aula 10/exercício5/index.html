@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card-cadastro {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+        }
+
+        .card-cadastro h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 1.8em;
+        }
+
+        .secao {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .secao h3 {
+            margin-top: -30px; 
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+            font-weight: 600;
+            background-color: #ffffff;
+            display: inline-block;
+            padding: 0 10px;
+            margin-left: -10px;
+        }
+
+        
+        .form-grupo {
+            margin-bottom: 15px;
+        }
+
+        .form-grupo label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .form-grupo input[type="text"],
+        .form-grupo input[type="email"],
+        .form-grupo input[type="password"],
+        .form-grupo input[type="date"],
+        .form-grupo select,
+        .form-grupo textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        
+        .data-input {
+            position: relative;
+        }
+        .data-input input[type="date"] {
+            padding-right: 30px;
+        }
+        .data-input::after {
+            content: "📅";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #888;
+        }
+
+        
+        .form-grupo textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        
+        .opcoes-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 5px;
+        }
+        
+        .opcoes-lista label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            color: #444;
+            margin-bottom: 0;
+        }
+        
+        .opcoes-lista input[type="radio"],
+        .opcoes-lista input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        
+        
+        .btn-enviar {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .btn-enviar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-cadastro">
+        <h2>Cadastro de Aluno</h2>
+        <form>
+            <div class="secao">
+                <h3>Informações Pessoais</h3>
+                
+                <div class="form-grupo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div class="form-grupo data-input">
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="text" id="data_nascimento" name="data_nascimento" placeholder="dd/mm/aaaa">
+                    </div>
+            </div>
+
+            <div class="secao">
+                <h3>Preferências</h3>
+
+                <div class="form-grupo">
+                    <label style="margin-bottom: 5px;">Gênero:</label>
+                    <div class="opcoes-lista">
+                        <label>
+                            <input type="radio" name="genero" value="masculino" checked>
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="feminino">
+                            Feminino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="outro">
+                            Outro
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-grupo">
+                    <label style="margin-bottom: 5px;">Interesses:</label>
+                    <div class="opcoes-lista">
+                        <label>
+                            <input type="checkbox" name="interesses" value="tecnologia">
+                            Tecnologia
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesses" value="musica">
+                            Música
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesses" value="esportes">
+                            Esportes
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesses" value="arte">
+                            Arte
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-grupo">
+                <label for="curso_escolhido">Escolha o curso:</label>
+                <select id="curso_escolhido" name="curso_escolhido">
+                    <option value="javascript_basico">JavaScript Básico</option>
+                    <option value="html_css">HTML e CSS Avançado</option>
+                    <option value="react">React para Iniciantes</option>
+                    <option value="python">Python e Data Science</option>
+                </select>
+            </div>
+            
+            <div class="form-grupo">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" placeholder="Digite suas observações aqui..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

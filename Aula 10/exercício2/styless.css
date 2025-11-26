@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* O CARD BRANCO */
+.card-formulario {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra mais sutil */
+    width: 100%;
+    max-width: 380px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+
+/* TÍTULOS DAS SEÇÕES (Gênero, Interesses) */
+.campo h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold; /* Títulos em negrito */
+}
+
+/* GRUPO DE OPÇÕES (Gênero e Interesses) */
+.grupo-opcoes {
+    padding: 0; /* Remove padding desnecessário */
+    margin-bottom: 30px; 
+
+}
+
+/* Cada opção individual (radio ou checkbox) */
+.opcao {
+    margin-bottom: 12px;
+}
+
+.opcao label {
+    display: inline-block; /* Alinha o texto do label ao input */
+    margin-left: 8px; /* Espaço entre o input e o texto */
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilo do botão de Enviar */
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
